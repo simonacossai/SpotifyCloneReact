@@ -47,7 +47,7 @@ class AlbumPage extends React.Component {
                         <div className="row">
                             {this.state.songs &&
                                 <img
-                                    src={this.state.songs.cover}
+                                    src={this.state.songs.cover_big}
                                     className="albumCoverImg"
                                     style={{ width: "300px" }}
                                 />
