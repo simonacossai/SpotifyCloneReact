@@ -12,15 +12,18 @@ class Song extends Component {
         <Image
           className="img-fluid songCover"
           src={this.props.data.album.cover_medium}
+          onClick={() =>
+            this.state.props.props.history.push('/AlbumPage/' + this.state.props.data.album.id)}
           alt="album picture"
           style={{
               width:"200px"
           }}
         />
-        <p className="text-center songCardTitle">{this.props.data.album.title}</p>
+        <p className="text-center songCardTitle">{this.props.data.title}</p>
       </Col>
     );
   }
 }
 
 export default Song;
+

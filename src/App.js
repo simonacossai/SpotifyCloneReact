@@ -18,8 +18,7 @@ function App() {
        exact
        render={(props ) => <Home {...props} />} />
        <Route
-      path="/AlbumPage"
-      exact
+      path="/AlbumPage/:id"
       render={(
       props 
       ) => <AlbumPage {...props} />} 

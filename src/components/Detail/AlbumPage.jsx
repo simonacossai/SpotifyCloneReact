@@ -5,12 +5,16 @@ import {BsMusicNote} from 'react-icons/bs';
 
 class AlbumPage extends React.Component {
     state = {
-        songs: null
+        songs: null,
+        props: this.props
     }
 
+
     componentDidMount = async () => {
+        const albumIdFromTheSearchBar = this.props.match.params.id;
+
         try {
-            let response = await fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem",
+            let response = await fetch("https://deezerdevs-deezer.p.rapidapi.com/album/"+ albumIdFromTheSearchBar,
                 {
                     "method": "GET",
                     "headers": {
@@ -33,6 +37,8 @@ class AlbumPage extends React.Component {
     }
 
     render(props) {
+        console.log("props", this.state.props)
+
         return (
 
             <div className="container mt-5 middleRow">
@@ -41,23 +47,23 @@ class AlbumPage extends React.Component {
                         <div className="row">
                             {this.state.songs &&
                                 <img
-                                    src={this.state.songs.data[0].artist.picture_medium}
+                                    src={this.state.songs.cover}
                                     className="albumCoverImg"
                                     style={{ width: "300px" }}
                                 />
                             }
                         </div>
                         <div className="row">
-                            {this.state.songs && <h6 className="albumName">{this.state.songs.data[0].album.title}</h6>}
+                            {this.state.songs && <h6 className="albumName">{this.state.songs.title}</h6>}
                         </div>
                         <div className="row">
-                            {this.state.songs && <h6 className="artist">{this.state.songs.data[0].artist.name}</h6>}
+                            {this.state.songs && <h6 className="artist">{this.state.songs.artist.name}</h6>}
                         </div>
                         <div className="row">
                             <button type="button" className="btn btn-lg mt-3 mb-1">Play</button>
                         </div>
                         <div className="row my-2">
-                            <h6 className="artist">2018 - 12 songs</h6>
+                            {this.state.songs && <h6 className="artist">2018 - {this.state.songs.nb_tracks} songs</h6>}
                         </div>
                         <div className="row mt-2">
                             <i
@@ -70,8 +76,8 @@ class AlbumPage extends React.Component {
                     <div className="col-lg-6 col-md-12 col-sm-12 text-center" id="songs" style={{ display: "flex", flexDirection: "column" }}>
                         <ListGroup className="listgroup">
 
-                            {this.state.songs && this.state.songs.data.map((song) => <ListGroupItem className="SongList">
-                              <span className="text-left text-white">  <BsMusicNote className="mr-2"/>{song.title}</span>
+                            {this.state.songs && this.state.songs.tracks.data.map((song) => <ListGroupItem className="SongList">
+                              <span className="text-left text-white">  <BsMusicNote className="mr-2"/>{song.title_short}</span>
                                 <span className="text-right text-white">{((song.duration % 60) / 10).toFixed(2)}</span>
                             </ListGroupItem>)}
 

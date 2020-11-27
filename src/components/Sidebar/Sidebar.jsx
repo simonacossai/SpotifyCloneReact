@@ -9,7 +9,7 @@ class Sidebar extends Component {
             <>
                 <nav
                     className="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-left">
-                    <a className="navbar-brand mt-3" href="homePage.html"><img src={logo} width="140" height="42"/></a>
+                    <a className="navbar-brand mt-3" href="#"><img src={logo} width="140" height="42"/></a>
                     <div className="collapse navbar-collapse mt-3" id="navbarNavDropdown">
                         <ul className="navbar-nav text-left">
                         <Link to="/">
