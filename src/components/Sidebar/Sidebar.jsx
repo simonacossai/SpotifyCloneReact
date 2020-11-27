@@ -9,10 +9,12 @@ class Sidebar extends Component {
             <>
                 <nav
                     className="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-left">
+                    <Link to="/">
                     <a className="navbar-brand mt-3" href="#"><img src={logo} width="140" height="42"/></a>
+                    </Link>
                     <div className="collapse navbar-collapse mt-3" id="navbarNavDropdown">
                         <ul className="navbar-nav text-left">
-                        <Link to="/">
+                        <Link to="/" className="add-link">
                             <li className="nav-item active text-left">
                                 <a className="nav-link" href="homePage.html"
                                 ><svg
@@ -32,6 +34,7 @@ class Sidebar extends Component {
                                     </svg>  Home <span className="sr-only">(current)</span></a>
                             </li>
                             </Link>
+                          
                             <li className="nav-item">
                                 <a className="nav-link"><svg
                                     width="1em"
@@ -52,7 +55,7 @@ class Sidebar extends Component {
                                         />
                                     </svg>  Discover</a>
                             </li>
-                            <Link to="/AlbumPage">
+                            <Link to="/AlbumPage" className="add-link">
                             <li className="nav-item">
                                 <a className="nav-link">
                                     <svg
@@ -71,7 +74,7 @@ class Sidebar extends Component {
                                 </a>
                             </li>
                             </Link>
-                            <Link to="/ArtistPage">
+                            <Link to="/ArtistPage" className="add-link">
                             <li className="nav-item">
                                 <a className="nav-link" href="artistPage.html"
                                 ><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-music-note-beamed mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

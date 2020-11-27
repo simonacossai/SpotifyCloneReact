@@ -31,6 +31,7 @@ function App() {
       props 
       ) => <ArtistPage {...props} />} 
       />
+      
        <Route
       path="/Comments/:songId"
       render={(

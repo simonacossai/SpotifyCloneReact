@@ -111,9 +111,9 @@ li:nth-of-type(5):hover>.underbar {
   flex-direction: column;
 }
 
-.songCover:hover+.songCardTitle {
+.songCover:hover ~ .songCardTitle {
   transition: .20s ease-in-out;
-  color: #fff;
+  color: #fff!important;
 
 }
 .addComment{

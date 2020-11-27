@@ -360,9 +360,12 @@ body {
       display: flex;
       width: 100%;
       justify-content: space-between;
+      border-color: none;
+      border: none;
       background-color: #252525!important;
   }
   .listgroup{
     justify-content: space-between;
     background-color: #252525!important;
+    border-color: none;
   }

@@ -104,3 +104,8 @@
     z-index: 100;
   }
   /*SIDE NAVBAR END*/
+
+  .add-link:hover{
+ text-decoration: none!important;
+  }
+  

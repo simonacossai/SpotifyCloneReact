@@ -42,7 +42,7 @@ class Home extends Component {
           this.setState({ museSongs: responseObject.data })
          
         ),
-      fetch(this.url + "ariana%20grande",{
+      fetch(this.url + "halsey",{
         "method": "GET",
         "headers": {
             "x-rapidapi-key": "ec5577de62msh9d203d454724b43p1f3c08jsnad1a59a31f6f",
@@ -81,9 +81,9 @@ class Home extends Component {
            
               <>
       <div className="container mb-4 text-center d-flex mx-auto justify-content-center">
-      <nav aria-label="breadcrumb">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item">
+      <nav aria-label="breadcrumb ml-5">
+        <ol className="breadcrumb ml-5">
+          <li className="breadcrumb-item ml-3">
             <a href="#">Trending</a>
             <div className="underbar"></div>
           </li>
