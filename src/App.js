@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AlbumPage from './components/Detail/AlbumPage'
 import ArtistPage from './components/ArtistPage/ArtistPage';
+import Comments from './components/Comments/Comments';
 
 function App() {
   return (
@@ -29,6 +30,12 @@ function App() {
       render={(
       props 
       ) => <ArtistPage {...props} />} 
+      />
+       <Route
+      path="/Comments/:songId"
+      render={(
+      props 
+      ) => <Comments {...props} />} 
       />
       <Player />
       </Router>

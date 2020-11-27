@@ -19,6 +19,8 @@ class Song extends Component {
               width:"200px"
           }}
         />
+        <button className="addComment"  onClick={() =>
+            this.state.props.props.history.push('/Comments/' + this.state.props.data.id)}>+</button>
         <p className="text-center songCardTitle">{this.props.data.title}</p>
       </Col>
     );
