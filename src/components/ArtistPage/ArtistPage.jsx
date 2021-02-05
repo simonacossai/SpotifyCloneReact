@@ -23,9 +23,7 @@ export default class ArtistPage extends Component {
           })
             .then((response) => response.json())
             .then((responseObject) => {
-              this.setState({ beatlesSongs: responseObject.data }, () =>
-                console.log(this.state.beatlesSongs)
-              );
+              this.setState({ beatlesSongs: responseObject.data });
             })
           .then(() => this.setState({ loading: false }))
           .catch((err) => {

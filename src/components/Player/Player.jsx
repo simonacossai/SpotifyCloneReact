@@ -188,7 +188,6 @@ import {AiFillPlayCircle} from 'react-icons/ai'
             </div>
             </div> 
             </div>
-
             </>
         )
     }

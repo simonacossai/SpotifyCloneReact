@@ -48,3 +48,7 @@
     background-color: #1ed760 !important;
     transition: .20s ease-in-out;
 }
+.badge{
+    padding: 5px 10px;
+    border-radius: 8%;
+}

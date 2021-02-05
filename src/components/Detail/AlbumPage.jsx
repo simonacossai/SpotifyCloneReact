@@ -27,7 +27,6 @@ class AlbumPage extends React.Component {
                 this.setState({
                     songs: song
                 })
-                console.log("state", this.state.songs)
             } else {
                 console.log("error during fetch")
             }

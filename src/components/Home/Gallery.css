@@ -126,3 +126,6 @@ li:nth-of-type(5):hover>.underbar {
   border: none;
   padding: 5px 10px;
 }
+.songCover{
+  box-shadow: 2px 2px 15px rgba(20, 20, 20, 0.351);
+}

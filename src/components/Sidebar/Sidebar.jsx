@@ -10,31 +10,31 @@ class Sidebar extends Component {
                 <nav
                     className="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-left">
                     <Link to="/">
-                    <a className="navbar-brand mt-3" href="#"><img src={logo} width="140" height="42"/></a>
+                        <a className="navbar-brand mt-3" href="#"><img src={logo} width="140" height="42" /></a>
                     </Link>
                     <div className="collapse navbar-collapse mt-3" id="navbarNavDropdown">
                         <ul className="navbar-nav text-left">
-                        <Link to="/" className="add-link">
-                            <li className="nav-item active text-left">
-                                <a className="nav-link" href="homePage.html"
-                                ><svg
-                                    width="1em"
-                                    height="1em"
-                                    className="mr-3"
-                                    viewBox="0 0 16 16"
-                                    className="bi bi-house-door"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                    </svg>  Home <span className="sr-only">(current)</span></a>
-                            </li>
+                            <Link to="/" className="add-link">
+                                <li className="nav-item active text-left">
+                                    <a className="nav-link" href="homePage.html"
+                                    ><svg
+                                        width="1em"
+                                        height="1em"
+                                        className="mr-3"
+                                        viewBox="0 0 16 16"
+                                        className="bi bi-house-door"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        </svg>  Home <span className="sr-only">(current)</span></a>
+                                </li>
                             </Link>
-                          
+
                             <li className="nav-item">
                                 <a className="nav-link"><svg
                                     width="1em"
@@ -45,44 +45,44 @@ class Sidebar extends Component {
                                     fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
-                                        />
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
-                                        />
-                                    </svg>  Discover</a>
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                                    />
+                                </svg>  Discover</a>
                             </li>
                             <Link to="/AlbumPage" className="add-link">
-                            <li className="nav-item">
-                                <a className="nav-link">
-                                    <svg
-                                        className="mr-2"
-                                        viewBox="0 0 512 512"
-                                        width="1.2em"
-                                        height="1.2em"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
+                                <li className="nav-item">
+                                    <a className="nav-link">
+                                        <svg
                                             className="mr-2"
-                                            d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
-                                            fill="currentColor"
-                                        ></path>
-                                    </svg>Your library
+                                            viewBox="0 0 512 512"
+                                            width="1.2em"
+                                            height="1.2em"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                className="mr-2"
+                                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                                fill="currentColor"
+                                            ></path>
+                                        </svg>Your library
                                 </a>
-                            </li>
+                                </li>
                             </Link>
                             <Link to="/ArtistPage" className="add-link">
-                            <li className="nav-item">
-                                <a className="nav-link" href="artistPage.html"
-                                ><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-music-note-beamed mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
-                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
-                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
-                                    </svg>Artist page</a>
-                            </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="artistPage.html"
+                                    ><svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-music-note-beamed mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                                            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                                        </svg>Artist page</a>
+                                </li>
                             </Link>
                             <span className="profile-nav">
                                 <li className="nav-item nav-profile-item">

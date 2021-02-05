@@ -172,7 +172,7 @@ console.log("props", this.state.props)
 
                 <ListGroup.Item key={`list-item-${index}`} className="list-item " style={{ display: "flex", justifyContent: "space-between" }}>
                   <div> {comment.author}: {comment.comment} {" "}
-                    <Badge pill variant={variant} className="ml-3">
+                    <Badge pill variant={variant} className="ml-3 badge">
                       {comment.rate}
                     </Badge>
                   </div>
