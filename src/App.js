@@ -8,11 +8,13 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AlbumPage from './components/Detail/AlbumPage'
 import ArtistPage from './components/ArtistPage/ArtistPage';
 import Comments from './components/Comments/Comments';
+import { Provider } from 'react-redux'
+import store  from './store/store'
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+        <Provider store={store}>
       <Sidebar/>
       <Route
        path="/"
@@ -39,9 +41,9 @@ function App() {
       ) => <Comments {...props} />} 
       />
       <Player />
+    </Provider>
       </Router>
 
-    </>
   );
 }
 
