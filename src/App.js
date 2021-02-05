@@ -9,7 +9,7 @@ import AlbumPage from './components/Detail/AlbumPage'
 import ArtistPage from './components/ArtistPage/ArtistPage';
 import Comments from './components/Comments/Comments';
 import { Provider } from 'react-redux'
-import store  from './store/store'
+import {store}  from './store/store'
 
 function App() {
   return (
