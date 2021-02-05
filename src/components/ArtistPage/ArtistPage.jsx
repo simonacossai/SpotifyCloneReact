@@ -3,6 +3,8 @@ import "./ArtistPage.css";
 import Gallery from "../Home/Gallery";
 import { Button } from "react-bootstrap";
 
+import { connect } from "react-redux";
+const mapStateToProps = (state) => state;
 class ArtistPage extends Component {
   state = {
     beatlesSongs: [],
@@ -92,4 +94,4 @@ class ArtistPage extends Component {
     );
   }
 }
-export default ArtistPage;
+export default connect(mapStateToProps)(ArtistPage);
